@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-warm-grid">
+    <title>상암 유흥 정보 | 찐리뷰 가이드</title>
+    <meta name="description" content="상암 유흥 정보 총정리. 상암에서 놀고 싶은데 어디로 가야할지 모르겠다면? 업소별 특징과 실제 방문자들의 생생한 후기를 한눈에 확인하세요. 전화문의 010-6279-0862">
+    <meta name="keywords" content="상암 유흥 정보, 상암 유흥 가이드, 상암 술집 정보, 상암 놀거리 정보, 상암 밤문화 정보, 상암 유흥주점 정보">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://t3b07-sa-night-rv-1.vercel.app/info">
+    <meta property="og:title" content="상암 유흥 정보 | 찐리뷰 가이드">
+    <meta property="og:description" content="상암 유흥 정보 총정리. 업소별 특징과 생생한 후기를 확인하세요.">
+    <meta property="og:url" content="https://t3b07-sa-night-rv-1.vercel.app/info">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #faf7f2; color: #1a1a1a; line-height: 1.6; }
+        a { color: #d4a373; text-decoration: none; transition: color 0.2s; }
+        a:hover { color: #b5835a; }
+        img { max-width: 100%; height: auto; display: block; }
+        ul, ol { list-style: none; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        header { background: #fff; border-bottom: 1px solid #e8e0d6; position: sticky; top: 0; z-index: 100; }
+        .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .logo { font-size: 1.5rem; font-weight: 700; color: #1a1a1a; letter-spacing: -0.5px; }
+        .logo span { color: #d4a373; }
+        .nav-links { display: flex; gap: 32px; }
+        .nav-links a { font-size: 0.95rem; font-weight: 500; color: #4a4a4a; }
+        .nav-links a:hover { color: #d4a373; }
+        .nav-cta { background: #d4a373; color: #fff !important; padding: 8px 20px; border-radius: 6px; font-weight: 600; font-size: 0.9rem; transition: background 0.2s; }
+        .nav-cta:hover { background: #b5835a; }
+        .hamburger-menu { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
+        .hamburger-menu span { display: block; width: 24px; height: 2px; background: #1a1a1a; border-radius: 2px; transition: all 0.3s; }
+        @media (max-width: 768px) {
+            .nav-links { display: none; flex-direction: column; position: absolute; top: 64px; left: 0; width: 100%; background: #fff; padding: 20px; border-bottom: 1px solid #e8e0d6; gap: 16px; }
+            .nav-links.active { display: flex; }
+            .hamburger-menu { display: flex; }
+            .nav-cta { display: inline-block; text-align: center; }
+        }
+        .page-header { padding: 60px 0 40px; text-align: center; }
+        .page-header h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 16px; letter-spacing: -1px; }
+        .page-header h1 span { color: #d4a373; }
+        .page-header p { font-size: 1.1rem; color: #6b6b6b; max-width: 600px; margin: 0 auto; line-height: 1.7; }
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 32px; padding: 20px 0 60px; }
+        .info-card { background: #fff; border-radius: 16px; padding: 32px; box-shadow: 0 2px 12px rgba(0,0,0,0.04); border: 1px solid #e8e0d6; transition: transform 0.2s, box-shadow 0.2s; }
+        .info-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+        .info-card h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 12px; color: #1a1a1a; }
+        .info-card h3::before { content: "📍 "; }
+        .info-card p { font-size: 0.95rem; color: #4a4a4a; line-height: 1.7; margin-bottom: 16px; }
+        .info-card ul { padding-left: 20px; }
+        .info-card ul li { list-style: disc; font-size: 0.9rem; color: #5a5a5a; margin-bottom: 8px; line-height: 1.6; }
+        .info-card .tag { display: inline-block; background: #f0ece6; color: #6b6b6b; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 500; margin-right: 6px; margin-bottom: 6px; }
+        .highlight-box { background: linear-gradient(135deg, #fdf6ee, #faf1e6); border-radius: 16px; padding: 40px; margin: 40px 0 60px; border: 1px solid #e8e0d6; }
+        .highlight-box h2 { font-size: 1.8rem; font-weight: 700; margin-bottom: 20px; }
+        .highlight-box h2 span { color: #d4a373; }
+        .highlight-box p { font-size: 1rem; color: #4a4a4a; line-height: 1.8; max-width: 800px; }
+        .highlight-box .cta-link { display: inline-block; margin-top: 24px; background: #d4a373; color: #fff; padding: 12px 28px; border-radius: 8px; font-weight: 600; font-size: 1rem; transition: background 0.2s; }
+        .highlight-box .cta-link:hover { background: #b5835a; }
+        .faq-section { padding: 40px 0 80px; }
+        .faq-section h2 { font-size: 2rem; font-weight: 700; text-align: center; margin-bottom: 40px; }
+        .faq-list { max-width: 800px; margin: 0 auto; }
+        .faq-item { background: #fff; border-radius: 12px; padding: 20px 24px; margin-bottom: 12px; border: 1px solid #e8e0d6; }
+        .faq-item h4 { font-size: 1.05rem; font-weight: 600; margin-bottom: 8px; color: #1a1a1a; cursor: pointer; }
+        .faq-item h4::before { content: "Q. "; color: #d4a373; font-weight: 700; }
+        .faq-item p { font-size: 0.95rem; color: #5a5a5a; line-height: 1.7; padding-left: 24px; }
+        .footer { background: #1a1a1a; color: #aaa; padding: 40px 0; text-align: center; font-size: 0.85rem; }
+        .footer a { color: #d4a373; }
+        .footer a:hover { text-decoration: underline; }
+        .tel-link { color: #d4a373; font-weight: 600; }
+        .tel-link:hover { color: #b5835a; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-inner">
+            <div class="logo">상암<span>유흥</span></div>
+            <button class="hamburger-menu" aria-label="메뉴 열기" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-links">
+                <a href="/">홈</a>
+                <a href="/info" style="color:#d4a373; font-weight:600;">정보</a>
+                <a href="/review">후기</a>
+                <a href="/map">지도</a>
+                <a href="tel:010-6279-0862" class="nav-cta">문의하기</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>상암 유흥 <span>완벽 가이드</span></h1>
+                <p>처음 상암에서 놀려면 뭐가 좋을지 고민되잖아? 내가 직접 경험하고 주변 후기까지 다 모아서 정리했어. 위치, 분위기, 가격대까지 싹 알려줄게.</p>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>상암 유흥의 특징</h3>
+                    <p>상암은 홍대나 강남처럼 번화한 느낌은 아니지만, 오히려 그래서 더 아늑하고 차분하게 즐기기 좋은 동네야. 월드컵 경기장 근처엔 깔끔한 술집이 많고, 디지털미디어시티(DMC) 쪽은 직장인들 많이 찾는 고급 주점이 숨어있어.</p>
+                    <ul>
+                        <li>대형 경기장 인근이라 주차가 편리한 편</li>
+                        <li>DMC 직장인 타겟 업소가 많아 가격대가 합리적</li>
+                        <li>주말보다 평일 저녁이 더 활기참</li>
+                    </ul>
+                    <span class="tag">#상암술집</span>
+                    <span class="tag">#DMC유흥</span>
+                </div>
+
+                <div class="info-card">
+                    <h3>업소별 분위기</h3>
+                    <p>솔직히 말하면 상암은 한 가지 스타일로만 가득한 곳이 아니야. 분위기별로 딱 정리해줄게.</p>
+                    <ul>
+                        <li><strong>와인바:</strong> 데이트나 조용한 대화 원하면 여기로. 분위기가 진짜 로맨틱해.</li>
+                        <li><strong>이자카야:</strong> 친구랑 편하게 술 한잔 하기 좋아. 안주가 맛있는 집이 많아.</li>
+                        <li><strong>룸살롱:</strong> 접대나 단체 모임에 딱. 깔끔하고 서비스 좋아.</li>
+                        <li><strong>포차:</strong> 가성비 끝판왕. 소주 한잔에 안주까지 배부르게.</li>
+                    </ul>
+                    <span class="tag">#분위기</span>
+                    <span class="tag">#업소추천</span>
+                </div>
+
+                <div class="info-card">
+                    <h3>이용 꿀팁</h3>
+                    <p>내가 몇 번 다녀보면서 느낀 꿀팁을 아낌없이 공개할게. 이거만 알면 상암 유흥 초보도 바로 고수되는 기분 느낄 수 있어.</p>
+                    <ul>
+                        <li>웨이팅: 주말 저녁 7~9시가 피크. 평일이나 낮 시간대를 노려봐.</li>
+                        <li>주차: 경기장 공영주차장이 가장 저렴. 발렛은 보통 5,000원.</li>
+                        <li>예약: 인기 있는 곳은 전화 예약 필수. 특히 단체는 무조건 미리 연락해.</li>
+                        <li>가격대: 1인 평균 5~10만원 생각하면 무난해.</li>
+                    </ul>
+                    <span class="tag">#꿀팁</span>
+                    <span class="tag">#상암놀거리</span>
+                </div>
+
+                <div class="info-card">
+                    <h3>추천 코스</h3>
+                    <p>처음 오는 사람들을 위한 내 추천 코스야. 이대로 따라오면 실패 없어!</p>
+                    <ul>
+                        <li><strong>코스 A (데이트):</strong> 상암동 와인바 → 디저트 카페 → 한강 야경 산책</li>
+                        <li><strong>코스 B (친구랑):</strong> 이자카야에서 안주 + 소주 → 노래방 → 포차에서 마무리</li>
+                        <li><strong>코스 C (접대/회식):</strong> 고급 일식당 → 룸살롱 → 2차는 깔끔한 바</li>
+                    </ul>
+                    <span class="tag">#코스추천</span>
+                    <span class="tag">#상암밤문화</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="highlight-box">
+                <h2>📞 지금 바로 <span>전화해서</span> 예약 정보 받아보세요</h2>
+                <p>내가 직접 확인한 업소들만 추려서 정리했는데, 자세한 건 전화로 물어보는 게 제일 확실해. 친절하게 안내해주니까 부담 갖지 말고 연락해봐. "찐리뷰 보고 전화했어요" 하면 더 친절하게 알려준다는 후기가 있더라!</p>
+                <a href="tel:010-6279-0862" class="cta-link">010-6279-0862 전화하기</a>
+            </div>
+        </section>
+
+        <section class="faq-section container">
+            <h2>자주 묻는 질문</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h4>상암에서 술 마시기 좋은 동네는 어디인가요?</h4>
+                    <p>상암 월드컵경기장 주변과 DMC 역 근처가 가장 핫해. 경기장 쪽은 야외 테라스 있는 곳이 많고, DMC 쪽은 건물 지하에 숨은 맛집이 많아. 둘 다 걸어서 이동 가능해서 편해.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>처음 가는데 분위기 어떤지 모르겠어요.</h4>
+                    <p>걱정 마! 상암은 홍대처럼 시끌벅적하기보다는 차분한 편이라 처음 가도 부담 없어. 나도 처음엔 긴장했는데 막상 가보니까 사람들도 친절하고 분위기도 좋더라고. 특히 와인바나 이자카야는 초보자한테 딱이야.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>가격대는 어떻게 되나요?</h4>
+                    <p>1인당 평균 5~10만원 사이 생각하면 돼. 포차나 이자카야는 3~5만원으로도 충분히 즐길 수 있고, 고급 룸살롱이나 레스토랑은 10만원 이상 들 수도 있어. 미리 전화해서 확인하는 게 제일 정확해.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>전화 문의는 언제 하는 게 좋나요?</h4>
+</body>
+</html>

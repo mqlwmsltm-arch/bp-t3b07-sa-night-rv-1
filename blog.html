@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-warm-grid">
+    <title>상암 유흥 후기 찐블로그 | 실제 방문자들의 생생한 이야기</title>
+    <meta name="description" content="상암에서 진짜 재미있는 유흥 후기, 여기 다 모았어. 내가 직접 가본 상암 술집, 유흥주점 후기와 꿀팁 대방출. 전화문의 010-6279-0862">
+    <meta name="keywords" content="상암 유흥 후기, 상암 유흥 블로그, 상암 술집 추천, 상암 밤문화 후기, 상암 놀거리 블로그, 상암 유흥주점 후기">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://t3b07-sa-night-rv-1.vercel.app/blog">
+    <meta property="og:title" content="상암 유흥 후기 찐블로그">
+    <meta property="og:description" content="상암 유흥 후기 찐리뷰 모음. 실제 방문자들의 생생한 후기와 꿀팁을 확인해보세요.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://t3b07-sa-night-rv-1.vercel.app/blog">
+    <style>
+        /* Reset & Base */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #fdfaf5;
+            color: #1a1a1a;
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        a {
+            color: #b8623a;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        a:hover {
+            color: #8a4a2a;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        ul, ol {
+            list-style: none;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header / Nav */
+        header {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e8e0d6;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        .nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .logo {
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            color: #2c2c2c;
+        }
+        .logo a {
+            color: inherit;
+        }
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            align-items: center;
+        }
+        .nav-links a {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: #3d3d3d;
+            padding: 4px 0;
+            border-bottom: 2px solid transparent;
+        }
+        .nav-links a:hover {
+            color: #b8623a;
+            border-bottom-color: #b8623a;
+        }
+        .nav-cta {
+            background-color: #b8623a;
+            color: #fff !important;
+            padding: 8px 18px !important;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border-bottom: none !important;
+        }
+        .nav-cta:hover {
+            background-color: #9e4f2e;
+            color: #fff !important;
+        }
+
+        /* Main Content */
+        .blog-post {
+            padding: 60px 0 40px;
+        }
+        .blog-post .container {
+            max-width: 800px;
+        }
+        .post-meta {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 0.85rem;
+            color: #7a7a7a;
+            margin-bottom: 12px;
+        }
+        .post-meta span {
+            background: #ede6dc;
+            padding: 2px 10px;
+            border-radius: 12px;
+            font-weight: 500;
+        }
+        h1 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 16px;
+            color: #1e1e1e;
+            letter-spacing: -0.3px;
+        }
+        .post-author {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 32px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e8e0d6;
+        }
+        .post-author img {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: #d4c9bc;
+        }
+        .post-author .name {
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+        .post-author .date {
+            color: #7a7a7a;
+            font-size: 0.85rem;
+        }
+        .featured-image {
+            margin-bottom: 32px;
+            border-radius: 12px;
+            overflow: hidden;
+            background: #e8e0d6;
+            aspect-ratio: 16/9;
+        }
+        .featured-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .post-content h2 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin: 36px 0 14px;
+            color: #1e1e1e;
+        }
+        .post-content h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 24px 0 10px;
+            color: #2c2c2c;
+        }
+        .post-content p {
+            margin-bottom: 18px;
+            font-size: 1.02rem;
+            color: #2c2c2c;
+        }
+        .post-content blockquote {
+            border-left: 4px solid #b8623a;
+            padding: 12px 20px;
+            margin: 24px 0;
+            background: #f5efe8;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            color: #3d3d3d;
+        }
+        .post-content ul {
+            list-style: disc;
+            padding-left: 24px;
+            margin-bottom: 18px;
+        }
+        .post-content ul li {
+            margin-bottom: 6px;
+        }
+        .post-content .highlight-box {
+            background: #f5efe8;
+            padding: 20px 24px;
+            border-radius: 12px;
+            margin: 24px 0;
+            border: 1px solid #e8e0d6;
+        }
+        .post-content .highlight-box strong {
+            color: #b8623a;
+        }
+        .cta-section {
+            background: #1e1e1e;
+            color: #fff;
+            padding: 28px 32px;
+            border-radius: 12px;
+            margin-top: 40px;
+            text-align: center;
+        }
+        .cta-section h3 {
+            font-size: 1.4rem;
+            margin-bottom: 8px;
+            color: #fff;
+        }
+        .cta-section p {
+            margin-bottom: 16px;
+            opacity: 0.9;
+        }
+        .cta-section .cta-button {
+            display: inline-block;
+            background: #b8623a;
+            color: #fff;
+            padding: 12px 32px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.05rem;
+            transition: background 0.2s;
+        }
+        .cta-section .cta-button:hover {
+            background: #9e4f2e;
+        }
+
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: #b0b0b0;
+            padding: 40px 0 30px;
+            margin-top: 60px;
+        }
+        footer .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        footer .footer-col h4 {
+            color: #e0d6cc;
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+        }
+        footer .footer-col p, footer .footer-col a {
+            font-size: 0.85rem;
+            color: #b0b0b0;
+            line-height: 1.8;
+        }
+        footer .footer-col a:hover {
+            color: #e0d6cc;
+        }
+        footer .copyright {
+            width: 100%;
+            text-align: center;
+            margin-top: 24px;
+            padding-top: 20px;
+            border-top: 1px solid #2a2a2a;
+            font-size: 0.8rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            .nav-links.active {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #fff;
+                padding: 20px;
+                border-bottom: 1px solid #e8e0d6;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+                gap: 16px;
+            }
+            .nav-cta {
+                display: none;
+            }
+            .hamburger-menu {
+                display: block;
+                cursor: pointer;
+                font-size: 1.5rem;
+                background: none;
+                border: none;
+                padding: 4px;
+                color: #2c2c2c;
+            }
+            .hamburger-menu:focus {
+                outline: 2px solid #b8623a;
+            }
+            .tel-link {
+                display: inline-block;
+                background: #b8623a;
+                color: #fff !important;
+                padding: 8px 16px;
+                border-radius: 6px;
+                font-weight: 600;
+                font-size: 0.9rem;
+                margin-top: 8px;
+                text-align: center;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            .post-content h2 {
+                font-size: 1.3rem;
+            }
+            .cta-section {
+                padding: 20px;
+            }
+        }
+        @media (min-width: 769px) {
+            .hamburger-menu {
+                display: none;
+            }
+            .tel-link {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-inner">
+            <div class="logo"><a href="/">상암유흥찐리뷰</a></div>
+            <button class="hamburger-menu" aria-label="메뉴 열기" onclick="toggleNav()">☰</button>
+            <nav class="nav-links" id="mainNav">
+                <a href="/">홈</a>
+                <a href="/reviews">후기모음</a>
+                <a href="/blog" style="border-bottom-color: #b8623a; color: #b8623a;">블로그</a>
+                <a href="/info">이용안내</a>
+                <a href="tel:010-6279-0862" class="nav-cta">전화문의</a>
+                <a href="tel:010-6279-0862" class="tel-link">📞 010-6279-0862</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="blog-post">
+        <div class="container">
+            <div class="post-meta">
+                <span>유흥꿀팁</span>
+                <span>상암지역</span>
+            </div>
+            <h1>상암 유흥 후기 찐리뷰: 내가 직접 겪은 상암 밤문화의 모든 것</h1>
+            <div class="post-author">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 44 44'%3E%3Crect width='44' height='44' fill='%23d4c9bc' rx='22'/%3E%3Ccircle cx='22' cy='16' r='6' fill='%23b8623a'/%3E%3Ccircle cx='22' cy='34' r='10' fill='%23b8623a'/%3E%3C/svg%3E" alt="프로필">
+                <div>
+                    <div class="name">상암찐내꼬</div>
+                    <div class="date">2025년 3월 21일 · 8분 읽기</div>
+                </div>
+            </div>
+            <div class="featured-image">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='450' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23e8e0d6'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23b8623a' font-size='22' font-weight='600'%3E상암 유흥 후기 블로그 대표 이미지%3C/text%3E%3C/svg%3E" alt="상암 유흥 후기 블로그 대표 이미지">
+            </div>
+
+            <div class="post-content">
+                <p>야, 형! 요즘 상암 쪽에서 놀고 싶은데 망설여진다고? 맞아, 나도 처음엔 그랬어. 상암 하면 뭔가 새롭고 깔끔한 이미지가 강해서 "유흥도시"라는 느낌이 잘 안 오잖아. 근데 말이야, 막상 가보니까 완전 다른 세상이더라고. 내가 직접 발로 뛰고 겪은 상암 유흥 후기, 지금부터 찐하게 풀어볼게. 한 번 읽어보면 오늘 밤 바로 달려가고 싶을 걸?</p>
+
+                <h2>왜 갑자기 상암 유흥이 핫해진 거야?</h2>
+                <p>솔직히 예전에는 홍대나 강남만 생각했잖아. 근데 요즘 상암이 뜨는 이유가 있어. 첫째, 교통이 엄청 편리해. 6호선, 경의중앙선, 공항철도 다 모여있고 주차도 널널해. 둘째, 새로 생긴 유흥주점들이 진짜 인테리어부터 서비스까지 퀄리티가 미쳤어. 셋째, 가격 대비 만족도가 높아. 강남 반값에 비슷한 수준을 즐길 수 있다니까? 이건 놓칠 수 없는 기회지.</p>
+
+                <blockquote>
+                    "처음엔 반신반의했는데, 가보니까 왜 진작 안 왔나 후회했어. 상암 유흥 후기 중에서 제일 현실적인 리뷰다!" — 블로그 댓글 중
+                </blockquote>
+
+                <h2>내가 직접 가본 상암 유흥주점 TOP 3</h2>
+                <p>여기부터는 내 돈 내고 내가 경험한 후기야. 광고 아니니까 믿어도 돼.</p>
+
+                <h3>1. 더클럽 상암 — 분위기 끝판왕</h3>
+                <p>처음 들어갔을 때부터 인테리어에 감탄했어. 조명이랑 음악이 딱 감성적이면서도 세련됐어. 직원들도 친절하고, 안주 퀄리티가 예술이야. 특히 매니저분들이 분위기를 잘 맞춰줘서 혼자 가도 전혀 안 어색해. 나는 여기서 친구 두 명이나 만들었어. ㅋㅋ 진짜야.</p>
+
+                <div class="highlight-box">
+                    <strong>💡 꿀팁:</strong> 더클럽은 주말에 웨이팅이 길 수 있으니 목요일이나 일요일 밤에 가는 걸 추천해. 인원이 적당하고 서비스가 더 집중돼.
+</body>
+</html>
